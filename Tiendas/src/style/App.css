@@ -1,0 +1,129 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  /**animation: App-logo-spin infinite .15s linear;**/
+
+  height: 40px;
+
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(-25deg); }
+  to { transform: rotate(20deg); }
+}
+
+
+
+/****Fuente****/
+main{font-family:serif;}
+main h1{
+  font-family: sans-serif;
+  color: #B28942;
+}
+
+main a{
+  text-decoration-color: none;
+}
+/*************/
+
+/***Navegacion***/
+/*.navegacion{background: #E3A20B;}*/
+
+.navegacion a.nav-link{color: rgba(255,254,255,1); cursor: pointer;}
+.navegacion a.nav-link:hover{color: #DEDE0C;}
+.navegacion a.nav-link.active{color: #DEDE0C;}
+.navbar-toggler{ transition: 1.1s;}
+.navbar-toggler:active{transform: rotate(90deg); transition: .1s; }
+.navbar-toggler-icon{background-image: url(../icon/menu.png);}
+.navbar-brand{margin: 0; padding-right: 0%; color: white;}
+.navbar-brand span {color: White; text-shadow: 0 0 5px rgba(0,178,255,1),	0 0 10px rgba(0,178,255,1),	0 0 20px rgba(0,178,255,1),	0 0 40px rgba(38,104,127,1),
+		      0 0 80px rgba(38,104,127,1), 0 0 90px rgba(38,104,127,1), 0 0 100px rgba(38,104,127,1),	0 0 140px rgba(38,104,127,1),	0 0 180px rgba(38,104,127,1);}
+
+/***************/
+
+/****carousel***/
+.carousel img{height: 100vh;}
+.checkico{width: 15px;}
+/***************/
+
+/**** Gradiente ****/
+body{background-image: linear-gradient(to top left, #ffffff, #efefef);}
+.gradiente{border-radius: 10px;  background-color: blue;}
+.gradiente-fluid{margin: 5% 0 5% 0;}
+/******************/
+
+/***** Footer *****/
+.footer{background-color:  rgb(49,71,85,.1);color: grey;}
+.footer h3{color: rgb(0,0,0)}
+.escudo{width: 50%; align-self: center;}
+.iconfooter{height: 20px; width: 20px;}
+.mapa{min-height: 250px;}
+/***************/
+
+.row.vdivide [class*='col-']:not(:last-child):after {
+  background: #e0e0e0;
+  width: 1px;
+  content: "";
+  display:block;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  min-height: 70px;
+}
+
+/*********PAGES*********/
+
+/****EntradaAdministrador******/
+
+.tienda{}
+.imgtienda{width: 100%;border-bottom-left-radius: 100px; border-bottom-right-radius: 100px;}
+.tiendasperfil h4{background-color: #4DAD83;}
+/*************************/
+
+/***********************/
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+.mision h1{ text-align: left;}
+.vision h1{ text-align: right;}
+.misionvision p{margin: 0 5% 0 5%;}
+.navegacion a.nav-link{border-bottom: 2px solid rgba(255,255,255,0)}
+.navegacion a.nav-link:hover{border-color: white;transition:.3s;}
+.navegacion a.nav-link.active{border-color: white}
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .mision h1{ text-align: left;}
+  .vision h1{ text-align: right;}
+  .misionvision p{margin: 0 5% 0 5%;}
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .mision h1{ text-align: center;}
+  .vision h1{ text-align: center;}
+}
+
+@media (max-width: 343px){
+  .navegacion .navbar-brand span{display: none;}
+}
